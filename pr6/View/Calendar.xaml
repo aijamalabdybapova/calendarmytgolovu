@@ -12,8 +12,9 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock x:Name="Data" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Day}" Grid.Row="0" />
+        
         <Button  Grid.Row="1" Click="Button_Click" x:Name="calendar">
-            <Image Grid.Row="1" Source="images/vopros.jpg" Stretch="Fill">
+            <Image x:Name="Icon" Grid.Row="1" Source="images/vopros.jpg" Stretch="Fill">
                 <Image.ContextMenu>
                     <ContextMenu>
                         <MenuItem Header="Открыть этот день"/>

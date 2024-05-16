@@ -23,12 +23,12 @@
             <ColumnDefinition Width="73*"/>
             <ColumnDefinition Width="204*"/>
         </Grid.ColumnDefinitions>
-        <CheckBox Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF71388E" Foreground="White"/>
-        <CheckBox Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF71388E" Foreground="White"/>
-        <CheckBox Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF71388E" Foreground="White"/>
-        <CheckBox Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF71388E" Foreground="White"/>
-        <CheckBox Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF71388E" Foreground="White"/>
-        <CheckBox Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF71388E" Foreground="White"/>
+        <CheckBox x:Name="CheckBox1" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF71388E" Foreground="White"/>
+        <CheckBox x:Name="CheckBox2" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF71388E" Foreground="White"/>
+        <CheckBox x:Name="CheckBox3" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF71388E" Foreground="White"/>
+        <CheckBox x:Name="CheckBox4" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF71388E" Foreground="White"/>
+        <CheckBox x:Name="CheckBox5" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF71388E" Foreground="White"/>
+        <CheckBox x:Name="CheckBox6" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF71388E" Foreground="White"/>
 
         <TextBlock Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Помыть голову с шампунем" Foreground="#FF7A1DA0" FontSize="16"/>
         <TextBlock Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"  Text="Шампунь и кондиционер" Foreground="#FF7A1DA0" FontSize="16" />
