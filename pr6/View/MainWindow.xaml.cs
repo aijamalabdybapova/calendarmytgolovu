@@ -56,13 +56,10 @@ namespace pr6
 
         private void SaveData()
         {
-           
             Vibor viborPage = PageFrame.Content as Vibor;
 
-            
             if (viborPage != null)
             {
-               
                 currentDayChoice.CheckBox1State = viborPage.CheckBox1.IsChecked ?? false;
                 currentDayChoice.CheckBox2State = viborPage.CheckBox2.IsChecked ?? false;
                 currentDayChoice.CheckBox3State = viborPage.CheckBox3.IsChecked ?? false;
@@ -86,7 +83,6 @@ namespace pr6
 
             // Serialize the currentDayChoice to JSON and save it to the file
             SerializationHelper.SerializeToJson(DataFilePath, currentDayChoice);
-
         }
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
@@ -112,21 +108,25 @@ namespace pr6
             {
                 Calendar calendar = new Calendar();
                 calendar.Day = i.ToString();
-
-                // После создания календаря обновляем изображение
-                calendar.UpdateImage(currentDayChoice.FirstSelectedItemImagePath);
-
                 calendarik.Children.Add(calendar);
             }
         }
-        void Generate()
+        public void Generate()
         {
             UpdateCalendarUI();
+
+            // Update the image based on the first selected item's image path
+            Calendar calendar = calendarik.Children[dateTime.Day - 1] as Calendar;
+            if (calendar != null)
+            {
+                calendar.UpdateImage(currentDayChoice.FirstSelectedItemImagePath);
+            }
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             SaveData();
+
         }
 
         private void PageFrame_Navigated(object sender, NavigationEventArgs e)

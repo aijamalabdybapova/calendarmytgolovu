@@ -23,6 +23,7 @@ namespace pr6
         public Vibor()
         {
             InitializeComponent();
+             //gt
         }
     }
 }

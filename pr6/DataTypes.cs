@@ -8,7 +8,7 @@ namespace pr6
 {
         [Serializable]
         public class DayChoice
-        {
+    {
         public string FirstSelectedItemImagePath { get; set; }
         public DateTime Date { get; set; }
         public bool CheckBox1State { get; set; }
@@ -19,7 +19,7 @@ namespace pr6
         public bool CheckBox6State { get; set; }
     }
 
-        [Serializable]
+    [Serializable]
         public class ItemChoice
         {
             public string Name { get; set; }

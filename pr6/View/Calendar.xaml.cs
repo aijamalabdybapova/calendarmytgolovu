@@ -19,7 +19,6 @@ namespace pr6
 {
     public partial class Calendar : UserControl
     {
-
         public string Day { get; set; } = "5";
         public Calendar()
         {
@@ -35,7 +34,14 @@ namespace pr6
             MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
             if (mainWindow != null)
             {
-                mainWindow.PageFrame.Navigate(new Uri("View/Vibor.xaml", UriKind.Relative));
+                mainWindow.PageFrame.Content = new Vibor();
+            }
+
+            // Update the image based on the first selected item's image path
+            MainWindow mainWindow1 = Application.Current.MainWindow as MainWindow;
+            if (mainWindow1 != null)
+            {
+                mainWindow1.Generate();
             }
         }
         public void UpdateImage(string imagePath)
